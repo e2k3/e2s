@@ -11,18 +11,6 @@ client.on('ready', () => {
 
 
 
-client.on("message", message => {
-  if (message.content === ".Bping") {
-    const embed = new Discord.RichEmbed()
-.setColor("RANDOM")
-.setTitle('**Pong ! **')
-.addField('**`بنق البوت`**' , `${Date.now() - message.createdTimestamp}` + ' `ms`')
-message.channel.sendEmbed(embed);
-}
-});
-
-
-
 
 
 
